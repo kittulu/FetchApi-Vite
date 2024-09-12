@@ -1,0 +1,57 @@
+/* CSS Variaveis */
+:root {
+  --color-background: #0a1720;
+  --color-secundary: #000222;
+  --color-text: #9dda81;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: Arial;
+  color: var(--color-text);
+}
+
+/* Usando css variaveis */
+body {
+  background-color: var(--color-background);
+}
+
+.header {
+  background-color: var(--color-secundary);
+  padding: 16px;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+.list-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+  padding: 30px;
+  margin: 10px;
+  
+  border-radius: 10px;
+  background-color: #144f6b52;
+}
+
+.item-container {
+  padding: 30;
+  background: var(--color-secundary);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.item-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.item-name {
+  text-align: center;
+}
